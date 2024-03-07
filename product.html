@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>TrustVenture</title>
+</head>
+<body>
+    <div class="content">
+        <!-- Nav Bar -->
+        <nav>
+            <h1>TrustVenture</h1>
+        <nav>
+            <ul class="navigate_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+        </nav>
+        <ul class="navigate_links">
+            <li><a href="#">Login</a></li>
+            <li><a class="signin" href="#"> 
+                <button>Register</button> 
+            </a></li>
+        </ul>
+        </nav>
+        <!-- Product Showcase -->
+        <div class="product_showcase">
+            <h2>Product Overview</h2>
+             <!-- Tab links -->
+            <div class="product_tab">
+                <button class="product_tablinks" onclick="openCity(event, 'Crypto')" id="defaultOpen">Crypto</button>
+                <button class="product_tablinks" onclick="openCity(event, 'Stocks')">Stocks</button>
+                <button class="product_tablinks" onclick="openCity(event, 'Commodities')">Commodities</button>
+            </div>
+            
+            <!-- Tab content -->
+            <div id="Crypto" class="product_tabcontent">
+                <div class="product_grid_container">
+                    <div class="product_grid_item">
+                        <div class="product_grid_item_header">
+                            <img src="/resource/bitcoin.png" alt="">
+                            <h3>BitCoin</h3>
+                        </div>
+                        <div class="product_grid_item_description">
+                            <p>Pioneer cryptocurrency, store of value, decentralized finance.</p>
+                            <div class="product_grid_item_ticker">
+                                <div>
+                                    <h4>Price</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Volume</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Market Cap</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_grid_item">
+                        <div class="product_grid_item_header">
+                            <img src="/resource/etherium.png" alt="">
+                            <h3>Ethereum</h3>
+                        </div>
+                        <div class="product_grid_item_description">
+                            <p>Ethereum fuels smart contracts, decentralized applications ecosystem.</p>
+                            <div class="product_grid_item_ticker">
+                                <div>
+                                    <h4>Price</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Volume</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Market Cap</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_grid_item">
+                        <div class="product_grid_item_header">
+                            <img src="/resource/solana.png" alt="">
+                            <h3>Solana</h3>
+                        </div>
+                        <div class="product_grid_item_description">
+                            <p>Solana's blazing fast blockchain powers decentralized applications.</p>
+                            <div class="product_grid_item_ticker">
+                                <div>
+                                    <h4>Price</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Volume</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Market Cap</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_grid_item">
+                        <div class="product_grid_item_header">
+                            <img src="/resource/rippleXRP.png" alt="">
+                            <h3>Ripple</h3>
+                        </div>
+                        <div class="product_grid_item_description">
+                            <p>Ripple's digital currency for seamless cross-border payments.</p>
+                            <div class="product_grid_item_ticker">
+                                <div>
+                                    <h4>Price</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Volume</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Market Cap</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_grid_item">
+                        <div class="product_grid_item_header">
+                            <img src="/resource/INTERNET PROTOCOL.png" alt="">
+                            <h3>Internet Protocol</h3>
+                        </div>
+                        <div class="product_grid_item_description">
+                            <p>Decentralized web infrastructure, internet reimagined.</p>
+                            <div class="product_grid_item_ticker">
+                                <div>
+                                    <h4>Price</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Volume</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Market Cap</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_grid_item">
+                        <div class="product_grid_item_header">
+                            <img src="/resource/binancecoin.png" alt="">
+                            <h3>Binance Coin</h3>
+                        </div>
+                        <div class="product_grid_item_description">
+                            <p>Binance Coin powers Binance Smart Chain transactions.</p>
+                            <div class="product_grid_item_ticker">
+                                <div>
+                                    <h4>Price</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Volume</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                                <div>
+                                    <h4>Market Cap</h4>
+                                    <p>XXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more grid items as needed -->
+                </div>
+            </div>
+
+            <div id="Stocks" class="product_tabcontent">
+                <div class="product_grid_container">
+                    <div class="product_grid_item">1</div>
+                    <div class="product_grid_item">2</div>
+                    <div class="product_grid_item">3</div>
+                    <div class="product_grid_item">4</div>
+                    <div class="product_grid_item">5</div>
+                    <div class="product_grid_item">6</div>
+                    <!-- Add more grid items as needed -->
+                </div>
+            </div>
+            
+            <div id="Commodities" class="product_tabcontent">
+                <div class="product_grid_container">
+                    <div class="product_grid_item">1</div>
+                    <div class="product_grid_item">2</div>
+                    <div class="product_grid_item">3</div>
+                    <div class="product_grid_item">4</div>
+                    <div class="product_grid_item">5</div>
+                    <div class="product_grid_item">6</div>
+                    <!-- Add more grid items as needed -->
+            </div>
+            </div> 
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footer_logo">
+                <h1>TrustVenture</h1>
+            </div>
+            <div class="footer_socialmedia">
+                <img src="resource/ins.png" alt="">
+                <img src="resource/discord.png" alt="">
+                <img src="resource/x.png" alt="">
+            </div>
+            <div class="footer_copyright">
+                <p>© 2024 TrustVentures. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+        
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("product_tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+        
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("product_tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        } 
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
