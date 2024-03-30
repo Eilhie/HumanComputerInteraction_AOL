@@ -245,3 +245,24 @@ footer {
     padding: 0;
     font-size: 12px;
 }
+
+.product_grid_item:hover {
+    transform: scale(1.05); /* Scale up the div on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: #131823;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 6px 6px;
+    z-index: 999;
+  }
