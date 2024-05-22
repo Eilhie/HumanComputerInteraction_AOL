@@ -265,4 +265,110 @@ footer {
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.30) 0px 6px 6px;
     z-index: 999;
-  }
+}
+
+.dashboard-header .timebased-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    border-bottom: 2px white solid;
+}
+
+.dashboard-header {
+    border: 0 0 2px 0 white solid;
+}
+
+/* Style the buttons */
+.time-selector .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #101314;
+    cursor: pointer;
+}
+  
+.time-selector .btn:hover {
+    background-color: #202527;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.time-selector .active {
+    background-color: #35933a;
+    color: white;
+}
+
+.PNL-analysis {
+    display: flex;
+}
+
+.left-analysis {
+    width: 50%;
+    float: left;
+}
+
+.right-analysis {
+    width: 50%;
+    float: left;
+}
+
+.PNL-analysis .line {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 32px;
+    margin: 0;
+}
+
+.login-form {
+    width: 360px;
+    margin: 125px auto;
+    
+}
+
+.login-form h2, .login-form p, .login-form button {
+    text-align: center;
+}
+
+.login-form input {
+    display: block;
+}
+
+.login-form label::before { 
+    content: '';
+    padding: 0;
+    margin: 0;
+}
+
+.login-form label::after { 
+    content: '';
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 15px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px; /* Set font size */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #202527;
+}
+
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+  color: #aaa; /* Change placeholder text color */
+}
+
+.login-form .rememberme {
+    display: flex;
+    justify-content: space-between; /* Aligns elements horizontally */
+    align-items: center; /* Aligns elements vertically */
+}
+
+.login-form .rememberme input[type='checkbox'] {
+    display: inline;
+}   
+
+.login-form .login-button {
+    margin-top: 32px;
+    width: 100%;
+}
