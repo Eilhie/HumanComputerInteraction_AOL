@@ -114,14 +114,14 @@ nav {
     color: #46C34C;
 }
 
-label::before {
+.FAQ_accordion label::before {
     content: '+';
     color: #FFBC00;
     margin-right: 10px;
     font-size: 24px;
 }
 
-input[type="radio"] {
+.FAQ_accordion input[type="radio"] {
     display: none;
 }
 
@@ -252,21 +252,6 @@ footer {
     cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-#popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    background-color: #131823;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.30) 0px 6px 6px;
-    z-index: 999;
-}
-
 .dashboard-header .timebased-header {
     display: flex;
     justify-content: space-between;
@@ -321,7 +306,7 @@ footer {
 .login-form {
     width: 360px;
     margin: 125px auto;
-    
+    color: white;
 }
 
 .login-form h2, .login-form p, .login-form button {
@@ -350,7 +335,7 @@ footer {
   margin-bottom: 10px;
   font-size: 16px; /* Set font size */
   border-radius: 5px; /* Add rounded corners */
-  background-color: #202527;
+  background-color: white;
 }
 
 .login-form input[type="text"]::placeholder,
@@ -368,7 +353,125 @@ footer {
     display: inline;
 }   
 
-.login-form .login-button {
+.login-form .login-button, .login-form .register-button {
     margin-top: 32px;
     width: 100%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: #131823;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 6px 6px;
+    z-index: 999;
+}
+
+.popup .spliting {
+    display: flex;
+    width: 900px;
+    height: 720px;
+}
+
+.popup .spliting .left-popup {
+    width: 600px;
+    overflow-y: scroll;
+}
+
+.popup .spliting .right-popup {
+    width: 300px;
+    border-left: 2px solid white;
+    padding-left: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.transaction-form input[type="number"] {
+  width: 100%;
+  padding: 15px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px; /* Set font size */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: white;
+}
+
+.transaction-form .form-button {
+    display: flex;
+}
+
+.transaction-form .form-button button {
+    width: 50%;
+}
+
+.transaction-form .form-button .buy-button {
+    margin-right: 6px;
+}
+
+.transaction-form .form-button .sell-button {
+    margin-left: 6px;
+    background-color: rgb(223, 64, 64);
+}
+
+.transaction-form .form-button .sell-button:hover {
+    background-color: salmon;
+}
+
+.right-popup .right-popup-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-popup .right-popup-header button {
+    background-color: transparent;
+}
+
+.dashboard-chart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.dashboard-chart .chart-container {
+    width: 50%; /* Set width for each chart container */
+    height: auto; /* Set a fixed height */
+    margin: 0 2.5%; /* Add some margin between the charts */
+    display: inline-block; /* Display containers inline */
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.positive {
+    color: #46C34C;
+}
+.negative {
+    color: red;
 }
